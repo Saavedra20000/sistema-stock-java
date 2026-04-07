@@ -13,6 +13,7 @@ import java.time.LocalDate;
 import java.time.YearMonth;
 import java.util.List;
 import javafx.application.Application;
+import static javafx.application.Application.launch;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -61,9 +62,10 @@ public class HistorialVentasView extends Application {
         colFecha.setCellValueFactory(data
                 -> new SimpleStringProperty(
                         data.getValue().getFecha() != null
-                        ? data.getValue().getFecha().toString()
+                        ? data.getValue().getFecha().format(java.time.format.DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm"))
                         : ""
-                ));
+                )
+        );
         colFecha.setPrefWidth(180);
 
         TableColumn<VentaResumen, String> colMetodoPago = new TableColumn<>("Método Pago");

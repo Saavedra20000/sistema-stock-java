@@ -34,6 +34,7 @@ import javafx.scene.input.KeyCode;
 import javafx.util.Duration;
 import javafx.scene.input.KeyEvent;
 import java.util.ArrayList;
+import static javafx.application.Application.launch;
 
 public class VentaView extends Application {
 
@@ -132,6 +133,15 @@ public class VentaView extends Application {
         colCarritoNombre.setCellValueFactory(data
                 -> new SimpleStringProperty(data.getValue().getProducto().getNombre()));
 
+        TableColumn<ItemVenta, String> colCarritoDescripcion = new TableColumn<>("Descripción");
+
+        colCarritoDescripcion.setCellValueFactory(data
+                -> new SimpleStringProperty(
+                        data.getValue().getProducto().getDescripcion() != null
+                        ? data.getValue().getProducto().getDescripcion()
+                        : ""
+                ));
+
         TableColumn<ItemVenta, Integer> colCarritoCantidad = new TableColumn<>("Cantidad");
 
         colCarritoCantidad.setCellValueFactory(data
@@ -151,6 +161,7 @@ public class VentaView extends Application {
                 .addAll(
                         colCarritoCodigo,
                         colCarritoNombre,
+                        colCarritoDescripcion,
                         colCarritoCantidad,
                         colCarritoPrecio,
                         colCarritoSubtotal

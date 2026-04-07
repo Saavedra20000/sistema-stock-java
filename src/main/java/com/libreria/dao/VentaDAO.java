@@ -215,11 +215,11 @@ public class VentaDAO {
         StringBuilder sql = new StringBuilder("SELECT * FROM ventas WHERE 1=1");
 
         if (desde != null) {
-            sql.append(" AND CAST(fecha AS DATE) >= ?");
+            sql.append(" AND date(fecha) >= date(?)");
         }
 
         if (hasta != null) {
-            sql.append(" AND CAST(fecha AS DATE) <= ?");
+            sql.append(" AND date(fecha) <= date(?)");
         }
 
         sql.append(" ORDER BY fecha DESC");
@@ -229,11 +229,11 @@ public class VentaDAO {
             int index = 1;
 
             if (desde != null) {
-                ps.setDate(index++, Date.valueOf(desde));
+                ps.setString(index++, desde.toString()); // yyyy-MM-dd
             }
 
             if (hasta != null) {
-                ps.setDate(index++, Date.valueOf(hasta));
+                ps.setString(index++, hasta.toString()); // yyyy-MM-dd
             }
 
             try (ResultSet rs = ps.executeQuery()) {
