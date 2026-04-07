@@ -1,21 +1,21 @@
-# Sistema de Gestión de Stock y Ventas
+Sistema de Gestión de Stock y Ventas
 
-Aplicación desarrollada en Java para la gestión de productos, ventas y control de stock utilizando SQLite como base de datos.
+Aplicación de escritorio desarrollada en Java para la administración de productos y ventas en pequeños comercios.
 
-## Tecnologías utilizadas
-
+Tecnologías
 - Java
+- JavaFX
 - SQLite
 - Maven
-- Arquitectura por capas (DAO, Model, App)
 
-## Funcionalidades
-
-- Alta, baja y modificación de productos
-- Gestión de categorías
-- Registro de ventas
-- Control de stock
+Funcionalidades
+- Gestión de productos y categorías
+- Sistema de ventas con carrito
 - Historial de ventas
+- Control de stock
+- Exportación a Excel y PDF
+- Ticket de venta
+- Backup automático
 
 ## Descripción
 
