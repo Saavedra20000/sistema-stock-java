@@ -59,9 +59,6 @@ La base de datos SQLite se inicializa automáticamente usando el archivo `sqlite
 ## Próximas mejoras
 
 - Implementar login de usuarios con distintos niveles de acceso.
-- Agregar reportes de ventas y estadísticas.
-- Incorporar exportación de datos a Excel y PDF.
-- Mejorar la búsqueda de productos por nombre y código de barras.
 - Optimizar la interfaz gráfica para una mejor experiencia de usuario.
 - Agregar validaciones y manejo de errores más robusto.
   
