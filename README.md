@@ -7,7 +7,7 @@ Aplicación desarrollada en Java para la gestión de productos, ventas y control
 - Java
 - SQLite
 - Maven
-- Arquitectura por capas (DAO, Model, Views)
+- Arquitectura por capas (DAO, Model, App)
 
 ## Funcionalidades
 
@@ -17,6 +17,20 @@ Aplicación desarrollada en Java para la gestión de productos, ventas y control
 - Control de stock
 - Historial de ventas
 
+## Descripción
+
+Este proyecto fue desarrollado como parte de mi aprendizaje en programación y desarrollo de software. El objetivo fue construir un sistema completo de gestión para pequeños comercios.
+
+## Arquitectura del proyecto
+
+El proyecto está organizado en capas para separar responsabilidades y facilitar el mantenimiento del sistema:
+
+- **model** → contiene las entidades principales del sistema, como productos, categorías y ventas.
+- **dao** → contiene la lógica de acceso a datos y la comunicación con la base SQLite.
+- **app** → contiene la interfaz gráfica y la lógica principal de la aplicación.
+
+Esta estructura permite mantener el código más ordenado, reutilizable y escalable.
+
 ## Cómo ejecutar el proyecto
 
 1. Clonar el repositorio
@@ -24,10 +38,6 @@ Aplicación desarrollada en Java para la gestión de productos, ventas y control
 3. Ejecutar la aplicación
 
 La base de datos SQLite se inicializa automáticamente usando el archivo `sqlite_init.sql`.
-
-## Descripción
-
-Este proyecto fue desarrollado como parte de mi aprendizaje en programación y desarrollo de software. El objetivo fue construir un sistema completo de gestión para pequeños comercios.
 
 ## Capturas del sistema
 
@@ -45,16 +55,6 @@ Este proyecto fue desarrollado como parte de mi aprendizaje en programación y d
 
 ### Historial de ventas
 ![Historial](images/historial.png)
-
-## Arquitectura del proyecto
-
-El proyecto está organizado en capas para separar responsabilidades y facilitar el mantenimiento del sistema:
-
-- **model** → contiene las entidades principales del sistema, como productos, categorías y ventas.
-- **dao** → contiene la lógica de acceso a datos y la comunicación con la base SQLite.
-- **app** → contiene la interfaz gráfica y la lógica principal de la aplicación.
-
-Esta estructura permite mantener el código más ordenado, reutilizable y escalable.
 
 ## Autor
 
