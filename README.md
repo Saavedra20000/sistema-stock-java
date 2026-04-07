@@ -17,6 +17,14 @@ Aplicación desarrollada en Java para la gestión de productos, ventas y control
 - Control de stock
 - Historial de ventas
 
+## Cómo ejecutar el proyecto
+
+1. Clonar el repositorio
+2. Abrir el proyecto en NetBeans o IntelliJ
+3. Ejecutar la aplicación
+
+La base de datos SQLite se inicializa automáticamente usando el archivo `sqlite_init.sql`.
+
 ## Descripción
 
 Este proyecto fue desarrollado como parte de mi aprendizaje en programación y desarrollo de software. El objetivo fue construir un sistema completo de gestión para pequeños comercios.
@@ -37,6 +45,14 @@ Este proyecto fue desarrollado como parte de mi aprendizaje en programación y d
 
 ### Historial de ventas
 ![Historial](images/historial.png)
+
+Arquitectura
+
+El proyecto está organizado en capas:
+
+model → entidades del sistema  
+dao → acceso a datos SQLite  
+app → interfaz y lógica de la aplicación
 
 ## Autor
 
