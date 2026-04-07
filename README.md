@@ -27,10 +27,10 @@ Este proyecto fue desarrollado como parte de mi aprendizaje en programación y d
 ![Pantalla principal](images/principal.png)
 
 ### Gestión de productos
-![Productos](images/gestionproductos.png)
+![Productos](images/productos.png)
 
 ### Gestión de categorias
-![Historial](images/gestioncategorias.png)
+![Historial](images/categorias.png)
 
 ### Registro de ventas
 ![Ventas](images/ventas.png)
