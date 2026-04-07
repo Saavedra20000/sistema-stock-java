@@ -21,6 +21,23 @@ Aplicación desarrollada en Java para la gestión de productos, ventas y control
 
 Este proyecto fue desarrollado como parte de mi aprendizaje en programación y desarrollo de software. El objetivo fue construir un sistema completo de gestión para pequeños comercios.
 
+## Capturas del sistema
+
+### Pantalla principal
+![Pantalla principal](images/principal.png)
+
+### Gestión de productos
+![Productos](images/gestion-productos.png)
+
+### Gestión de categorias
+![Historial](images/gestion-categorias.png)
+
+### Registro de ventas
+![Ventas](images/ventas.png)
+
+### Historial de ventas
+![Historial](images/historial.png)
+
 ## Autor
 
 Felipe Saavedra
