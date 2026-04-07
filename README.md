@@ -1,4 +1,4 @@
-Sistema de Gestión de Stock y Ventas
+## Sistema de Gestión de Stock y Ventas
 
 Aplicación de escritorio desarrollada en Java para la administración de productos y ventas en pequeños comercios.
 
