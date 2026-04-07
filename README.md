@@ -56,12 +56,6 @@ La base de datos SQLite se inicializa automáticamente usando el archivo `sqlite
 ### Historial de ventas
 ![Historial](images/historial.png)
 
-## Próximas mejoras
-
-- Implementar login de usuarios con distintos niveles de acceso.
-- Optimizar la interfaz gráfica para una mejor experiencia de usuario.
-- Agregar validaciones y manejo de errores más robusto.
-  
 ## Autor
 
 Felipe Saavedra
