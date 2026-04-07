@@ -46,13 +46,15 @@ Este proyecto fue desarrollado como parte de mi aprendizaje en programación y d
 ### Historial de ventas
 ![Historial](images/historial.png)
 
-Arquitectura
+## Arquitectura del proyecto
 
-El proyecto está organizado en capas:
+El proyecto está organizado en capas para separar responsabilidades y facilitar el mantenimiento del sistema:
 
-model → entidades del sistema  
-dao → acceso a datos SQLite  
-app → interfaz y lógica de la aplicación
+- **model** → contiene las entidades principales del sistema, como productos, categorías y ventas.
+- **dao** → contiene la lógica de acceso a datos y la comunicación con la base SQLite.
+- **app** → contiene la interfaz gráfica y la lógica principal de la aplicación.
+
+Esta estructura permite mantener el código más ordenado, reutilizable y escalable.
 
 ## Autor
 
